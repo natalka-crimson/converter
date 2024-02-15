@@ -33,8 +33,10 @@ def converter(curr_1: str, curr_2: str, money: float):
                     return 'Wrong input'
         case _:
                     return 'Wrong input'
-
+def display_board():
+    print('UAH -> $: 0.026\nUAH -> €: 0.024\n$ -> €: 0.93\n$ -> UAH: 38.1\n€ -> UAN: 40.89\n€ -> $: 1.07')
 def currency_input():
+    display_board()
     curr_1 = input('Choose currency which you have:\n1 - UAH\n2 - Dollar\n3 - Euro\nYour choice: ')
     curr_2 = input('Choose currency which you like to get:\n1 - UAH\n2 - Dollar\n3 - Euro\nYour choice: ')
     money = float(input('How much would you like to convert? '))
