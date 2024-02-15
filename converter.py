@@ -6,23 +6,23 @@ def converter(curr_1: str, curr_2: str, money: float):
                 case '1':
                     return 'You selected the same currency as you have: UAH'
                 case '2':
-                    return f'{money} UAH = {money * 0.026} $'
+                    return f'{money} UAH = {round(money * 0.026, 2)} $'
                 case '3':
-                    return f'{money} UAH = {money * 0.024} €'
+                    return f'{money} UAH = {round(money * 0.024, 2)} €'
         case '2':
             match curr_2:
                 case '1':
-                    return f'{money} $ = {money * 38.1} UAH'
+                    return f'{money} $ = {round(money * 38.1, 2)} UAH'
                 case '2':
                     return 'You selected the same currency as you have: $'
                 case '3':
-                    return f'{money} $ = {money * 0.93} €'
+                    return f'{money} $ = {round(money * 0.93, 2)} €'
         case '3':
             match curr_2:
                 case '1':
-                    return f'{money} € = {money * 40.89} UAH'
+                    return f'{money} € = {round(money * 40.89, 2)} UAH'
                 case '2':
-                    return f'{money} € = {money * 1.07} $'
+                    return f'{money} € = {round(money * 1.07, 2)} $'
                 case '3':
                     return 'You selected the same currency as you have: €'
 
